@@ -1,0 +1,148 @@
+<svg width="900" height="340" viewBox="0 0 900 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b0c18"/>
+      <stop offset="0.6" stop-color="#141029"/>
+      <stop offset="1" stop-color="#1f1038"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd166"/>
+      <stop offset="0.45" stop-color="#ff9e64"/>
+      <stop offset="1" stop-color="#ff2fb3"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7dcfff">
+        <animate attributeName="stop-color" values="#7dcfff;#bb9af7;#ff79c6;#7dcfff" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="0.5" stop-color="#bb9af7">
+        <animate attributeName="stop-color" values="#bb9af7;#ff79c6;#7dcfff;#bb9af7" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="1" stop-color="#ff79c6">
+        <animate attributeName="stop-color" values="#ff79c6;#7dcfff;#bb9af7;#ff79c6" dur="6s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <linearGradient id="scanbar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7aa2f7" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#7aa2f7" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#7aa2f7" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="bigGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <mask id="sunMask">
+      <circle cx="450" cy="172" r="66" fill="#fff"/>
+      <rect x="378" y="172" width="146" height="7" fill="#000"/>
+      <rect x="378" y="186" width="146" height="9" fill="#000"/>
+      <rect x="378" y="203" width="146" height="11" fill="#000"/>
+      <rect x="378" y="222" width="146" height="14" fill="#000"/>
+    </mask>
+    <mask id="typeMask">
+      <rect x="230" y="280" width="0" height="26" fill="#fff">
+        <animate attributeName="width" from="0" to="472" dur="2.6s" begin="0.9s" fill="freeze"/>
+      </rect>
+    </mask>
+    <clipPath id="ground"><rect x="0" y="192" width="900" height="148"/></clipPath>
+  </defs>
+
+  <rect width="900" height="340" fill="url(#bg)"/>
+
+  <!-- stars -->
+  <g fill="#c0caf5">
+    <circle cx="42" cy="38" r="1.4"><animate attributeName="opacity" values="1;0.2;1" dur="2.4s" repeatCount="indefinite"/></circle>
+    <circle cx="118" cy="92" r="1"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.1s" repeatCount="indefinite"/></circle>
+    <circle cx="205" cy="30" r="1.6"><animate attributeName="opacity" values="1;0.15;1" dur="1.9s" repeatCount="indefinite"/></circle>
+    <circle cx="262" cy="120" r="1"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.8s" repeatCount="indefinite"/></circle>
+    <circle cx="333" cy="58" r="1.3"><animate attributeName="opacity" values="1;0.3;1" dur="3.6s" repeatCount="indefinite"/></circle>
+    <circle cx="398" cy="24" r="1"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.2s" repeatCount="indefinite"/></circle>
+    <circle cx="520" cy="42" r="1.5"><animate attributeName="opacity" values="1;0.25;1" dur="2.7s" repeatCount="indefinite"/></circle>
+    <circle cx="581" cy="96" r="1"><animate attributeName="opacity" values="0.35;1;0.35" dur="3.3s" repeatCount="indefinite"/></circle>
+    <circle cx="648" cy="35" r="1.4"><animate attributeName="opacity" values="1;0.2;1" dur="2.1s" repeatCount="indefinite"/></circle>
+    <circle cx="716" cy="110" r="1.1"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.9s" repeatCount="indefinite"/></circle>
+    <circle cx="788" cy="52" r="1.5"><animate attributeName="opacity" values="1;0.25;1" dur="3.4s" repeatCount="indefinite"/></circle>
+    <circle cx="854" cy="26" r="1.2"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.5s" repeatCount="indefinite"/></circle>
+    <circle cx="877" cy="132" r="1"><animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/></circle>
+    <circle cx="76" cy="150" r="1"><animate attributeName="opacity" values="1;0.3;1" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="160" cy="66" r="1.1"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.6s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- shooting star -->
+  <g opacity="0">
+    <line x1="0" y1="0" x2="46" y2="14" stroke="#7dcfff" stroke-width="1.6" stroke-linecap="round"/>
+    <animateTransform attributeName="transform" type="translate" values="120,20; 380,110" dur="1.1s" begin="2s;9s;16s" fill="remove"/>
+    <animate attributeName="opacity" values="0;1;0" dur="1.1s" begin="2s;9s;16s"/>
+  </g>
+
+  <!-- retro sun -->
+  <circle cx="450" cy="172" r="80" fill="#ff2fb3" opacity="0.35" filter="url(#bigGlow)">
+    <animate attributeName="opacity" values="0.35;0.5;0.35" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="450" cy="172" r="66" fill="url(#sun)" mask="url(#sunMask)"/>
+
+  <!-- horizon -->
+  <rect x="0" y="190" width="900" height="2.5" fill="#ff2fb3" filter="url(#glow)"/>
+
+  <!-- perspective grid -->
+  <g clip-path="url(#ground)" stroke="#7a3bd0" stroke-width="1" opacity="0.85">
+    <line x1="450" y1="192" x2="-420" y2="340"/>
+    <line x1="450" y1="192" x2="-180" y2="340"/>
+    <line x1="450" y1="192" x2="30" y2="340"/>
+    <line x1="450" y1="192" x2="200" y2="340"/>
+    <line x1="450" y1="192" x2="330" y2="340"/>
+    <line x1="450" y1="192" x2="450" y2="340"/>
+    <line x1="450" y1="192" x2="570" y2="340"/>
+    <line x1="450" y1="192" x2="700" y2="340"/>
+    <line x1="450" y1="192" x2="870" y2="340"/>
+    <line x1="450" y1="192" x2="1080" y2="340"/>
+    <line x1="450" y1="192" x2="1320" y2="340"/>
+  </g>
+  <g clip-path="url(#ground)" stroke="#ff2fb3" stroke-width="1.4">
+    <rect x="0" width="900" height="1.4" fill="#ff2fb3" y="192" opacity="0">
+      <animate attributeName="y" values="192;340" dur="4.5s" begin="0s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 1 1" keyTimes="0;1"/>
+      <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.25;1" dur="4.5s" begin="0s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="0" width="900" height="1.4" fill="#ff2fb3" y="192" opacity="0">
+      <animate attributeName="y" values="192;340" dur="4.5s" begin="1.125s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 1 1" keyTimes="0;1"/>
+      <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.25;1" dur="4.5s" begin="1.125s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="0" width="900" height="1.4" fill="#ff2fb3" y="192" opacity="0">
+      <animate attributeName="y" values="192;340" dur="4.5s" begin="2.25s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 1 1" keyTimes="0;1"/>
+      <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.25;1" dur="4.5s" begin="2.25s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="0" width="900" height="1.4" fill="#ff2fb3" y="192" opacity="0">
+      <animate attributeName="y" values="192;340" dur="4.5s" begin="3.375s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 1 1" keyTimes="0;1"/>
+      <animate attributeName="opacity" values="0;0.9;0.9" keyTimes="0;0.25;1" dur="4.5s" begin="3.375s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- title -->
+  <g font-family="'JetBrains Mono','Fira Code',ui-monospace,monospace" font-weight="800" text-anchor="middle">
+    <text x="452" y="90" font-size="54" letter-spacing="6" fill="#ff2fb3" opacity="0.45" filter="url(#bigGlow)">SUNWOO MOON</text>
+    <text x="448.5" y="87.5" font-size="54" letter-spacing="6" fill="#ff004c" opacity="0.5">SUNWOO MOON</text>
+    <text x="451.5" y="88.5" font-size="54" letter-spacing="6" fill="#00eaff" opacity="0.5">SUNWOO MOON</text>
+    <text x="450" y="88" font-size="54" letter-spacing="6" fill="url(#titleGrad)" filter="url(#glow)">SUNWOO MOON
+      <animate attributeName="opacity" values="1;1;0.82;1;0.94;1;1" keyTimes="0;0.7;0.72;0.76;0.9;0.93;1" dur="5s" repeatCount="indefinite"/>
+    </text>
+    <text x="450" y="118" font-size="15" letter-spacing="9" fill="#7dcfff" opacity="0.95">@ e u n h h u</text>
+  </g>
+
+  <!-- typing subtitle -->
+  <g font-family="'JetBrains Mono','Fira Code',ui-monospace,monospace" font-size="16">
+    <text x="232" y="299" fill="#9ece6a" mask="url(#typeMask)">▸ local-first AI tooling · security · automation</text>
+    <rect x="230" y="284" width="9" height="19" fill="#9ece6a">
+      <animate attributeName="x" from="230" to="692" dur="2.6s" begin="0.9s" fill="freeze"/>
+      <animate attributeName="opacity" values="1;0;1" dur="1s" begin="3.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- scan bar + scanlines -->
+  <rect x="0" y="-60" width="900" height="60" fill="url(#scanbar)">
+    <animate attributeName="y" values="-60;340" dur="6s" repeatCount="indefinite"/>
+  </rect>
+  <g fill="#000" opacity="0.10">
+    <rect y="0" width="900" height="1"/><rect y="4" width="900" height="1"/><rect y="8" width="900" height="1"/><rect y="12" width="900" height="1"/><rect y="16" width="900" height="1"/><rect y="20" width="900" height="1"/><rect y="24" width="900" height="1"/><rect y="28" width="900" height="1"/><rect y="32" width="900" height="1"/><rect y="36" width="900" height="1"/><rect y="40" width="900" height="1"/><rect y="44" width="900" height="1"/><rect y="48" width="900" height="1"/><rect y="52" width="900" height="1"/><rect y="56" width="900" height="1"/><rect y="60" width="900" height="1"/><rect y="64" width="900" height="1"/><rect y="68" width="900" height="1"/><rect y="72" width="900" height="1"/><rect y="76" width="900" height="1"/><rect y="80" width="900" height="1"/><rect y="84" width="900" height="1"/><rect y="88" width="900" height="1"/><rect y="92" width="900" height="1"/><rect y="96" width="900" height="1"/><rect y="100" width="900" height="1"/><rect y="104" width="900" height="1"/><rect y="108" width="900" height="1"/><rect y="112" width="900" height="1"/><rect y="116" width="900" height="1"/><rect y="120" width="900" height="1"/><rect y="124" width="900" height="1"/><rect y="128" width="900" height="1"/><rect y="132" width="900" height="1"/><rect y="136" width="900" height="1"/><rect y="140" width="900" height="1"/><rect y="144" width="900" height="1"/><rect y="148" width="900" height="1"/><rect y="152" width="900" height="1"/><rect y="156" width="900" height="1"/><rect y="160" width="900" height="1"/><rect y="164" width="900" height="1"/><rect y="168" width="900" height="1"/><rect y="172" width="900" height="1"/><rect y="176" width="900" height="1"/><rect y="180" width="900" height="1"/><rect y="184" width="900" height="1"/><rect y="188" width="900" height="1"/><rect y="192" width="900" height="1"/><rect y="196" width="900" height="1"/><rect y="200" width="900" height="1"/><rect y="204" width="900" height="1"/><rect y="208" width="900" height="1"/><rect y="212" width="900" height="1"/><rect y="216" width="900" height="1"/><rect y="220" width="900" height="1"/><rect y="224" width="900" height="1"/><rect y="228" width="900" height="1"/><rect y="232" width="900" height="1"/><rect y="236" width="900" height="1"/><rect y="240" width="900" height="1"/><rect y="244" width="900" height="1"/><rect y="248" width="900" height="1"/><rect y="252" width="900" height="1"/><rect y="256" width="900" height="1"/><rect y="260" width="900" height="1"/><rect y="264" width="900" height="1"/><rect y="268" width="900" height="1"/><rect y="272" width="900" height="1"/><rect y="276" width="900" height="1"/><rect y="280" width="900" height="1"/><rect y="284" width="900" height="1"/><rect y="288" width="900" height="1"/><rect y="292" width="900" height="1"/><rect y="296" width="900" height="1"/><rect y="300" width="900" height="1"/><rect y="304" width="900" height="1"/><rect y="308" width="900" height="1"/><rect y="312" width="900" height="1"/><rect y="316" width="900" height="1"/><rect y="320" width="900" height="1"/><rect y="324" width="900" height="1"/><rect y="328" width="900" height="1"/><rect y="332" width="900" height="1"/><rect y="336" width="900" height="1"/>
+  </g>
+</svg>

@@ -1,0 +1,75 @@
+<svg width="880" height="430" viewBox="0 0 880 430" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="tshadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#000" flood-opacity="0.55"/>
+    </filter>
+    <mask id="c1"><rect x="62" y="76" width="0" height="24" fill="#fff"><animate attributeName="width" from="0" to="66" dur="0.7s" begin="0.5s" fill="freeze"/></rect></mask>
+    <mask id="c2"><rect x="62" y="154" width="0" height="24" fill="#fff"><animate attributeName="width" from="0" to="130" dur="1s" begin="2.4s" fill="freeze"/></rect></mask>
+    <mask id="c3"><rect x="62" y="232" width="0" height="24" fill="#fff"><animate attributeName="width" from="0" to="130" dur="1s" begin="4.7s" fill="freeze"/></rect></mask>
+    <mask id="c4"><rect x="62" y="310" width="0" height="24" fill="#fff"><animate attributeName="width" from="0" to="330" dur="1.7s" begin="7s" fill="freeze"/></rect></mask>
+  </defs>
+
+  <!-- window -->
+  <rect x="10" y="10" width="860" height="410" rx="14" fill="#16161e" stroke="#2a2b3d" filter="url(#tshadow)"/>
+  <rect x="10" y="10" width="860" height="38" rx="14" fill="#1a1b27"/>
+  <rect x="10" y="34" width="860" height="14" fill="#1a1b27"/>
+  <circle cx="36" cy="29" r="6.5" fill="#f7768e"/>
+  <circle cx="58" cy="29" r="6.5" fill="#e0af68"/>
+  <circle cx="80" cy="29" r="6.5" fill="#9ece6a"/>
+  <text x="440" y="34" text-anchor="middle" font-family="'JetBrains Mono',ui-monospace,monospace" font-size="13" fill="#565f89">eunhhu@localhost — zsh</text>
+
+  <g font-family="'JetBrains Mono','Fira Code',ui-monospace,monospace" font-size="15">
+    <!-- 1 -->
+    <text x="34" y="94" fill="#bb9af7">❯</text>
+    <text x="62" y="94" fill="#c0caf5" mask="url(#c1)">whoami</text>
+    <g opacity="0">
+      <text x="62" y="120" fill="#565f89">sunwoo moon · full-stack + security developer</text>
+      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.5s" fill="freeze"/>
+    </g>
+
+    <!-- 2 -->
+    <g opacity="0">
+      <text x="34" y="172" fill="#bb9af7">❯</text>
+      <animate attributeName="opacity" from="0" to="1" dur="0.2s" begin="2.2s" fill="freeze"/>
+    </g>
+    <text x="62" y="172" fill="#c0caf5" mask="url(#c2)">ls ~/projects</text>
+    <g opacity="0">
+      <text x="62" y="198" fill="#7aa2f7">ardex/</text>
+      <text x="150" y="198" fill="#7aa2f7">orv/</text>
+      <text x="216" y="198" fill="#7aa2f7">charm/</text>
+      <text x="304" y="198" fill="#9ece6a">WHAT.md</text>
+      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="3.7s" fill="freeze"/>
+    </g>
+
+    <!-- 3 -->
+    <g opacity="0">
+      <text x="34" y="250" fill="#bb9af7">❯</text>
+      <animate attributeName="opacity" from="0" to="1" dur="0.2s" begin="4.5s" fill="freeze"/>
+    </g>
+    <text x="62" y="250" fill="#c0caf5" mask="url(#c3)">cat focus.txt</text>
+    <g opacity="0">
+      <text x="62" y="276" fill="#565f89">local-first automation · codex workflows · dsl/runtime design</text>
+      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="6s" fill="freeze"/>
+    </g>
+
+    <!-- 4 -->
+    <g opacity="0">
+      <text x="34" y="328" fill="#bb9af7">❯</text>
+      <animate attributeName="opacity" from="0" to="1" dur="0.2s" begin="6.8s" fill="freeze"/>
+    </g>
+    <text x="62" y="328" fill="#c0caf5" mask="url(#c4)">./ship --local-first --no-busywork</text>
+    <g opacity="0">
+      <text x="62" y="354" fill="#9ece6a">✔ shipped — fast feedback loops engaged</text>
+      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="9s" fill="freeze"/>
+    </g>
+
+    <!-- final prompt -->
+    <g opacity="0">
+      <text x="34" y="396" fill="#bb9af7">❯</text>
+      <animate attributeName="opacity" from="0" to="1" dur="0.2s" begin="9.6s" fill="freeze"/>
+    </g>
+    <rect x="62" y="381" width="9" height="19" fill="#c0caf5" opacity="0">
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.01;0.5;0.51" dur="1.1s" begin="9.8s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>
