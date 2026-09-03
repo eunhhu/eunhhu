@@ -1,99 +1,66 @@
-<div align="center">
+# Sunwoo Moon
 
-<!-- ⚡ custom hand-built animated SVG — synthwave hero -->
-<img src="assets/hero.svg" width="100%" alt="Sunwoo Moon — @eunhhu" />
+**Systems · Security · Developer Tooling**
 
-<br/><br/>
+I build local-first developer infrastructure, reproducible security tooling, and
+low-level runtime experiments. My work focuses on explicit trust boundaries,
+testable contracts, and evidence that distinguishes a working implementation
+from an architectural claim.
 
-<img src="https://skillicons.dev/icons?i=ts,js,rust,nodejs,bun,react,linux,docker,git,githubactions,vscode,bash&perline=12" alt="stack" />
+## Selected work
 
-<br/><br/>
+### [Ditto](https://github.com/eunhhu/ditto)
 
-<img src="https://img.shields.io/badge/local--first-7aa2f7?style=for-the-badge&logoColor=white" />
-<img src="https://img.shields.io/badge/AI_agents-bb9af7?style=for-the-badge&logoColor=white" />
-<img src="https://img.shields.io/badge/security-f7768e?style=for-the-badge&logoColor=white" />
-<img src="https://img.shields.io/badge/automation-9ece6a?style=for-the-badge&logoColor=white" />
-<img src="https://komarev.com/ghpvc/?username=eunhhu&style=for-the-badge&color=414868&label=VIEWS" alt="views" />
+A local-first semantic microkernel for AI agents, written in Rust. It provides a
+durable event spine, bounded context and capability retrieval, content-addressed
+artifacts, provider-neutral model contracts, and fail-closed effect leases.
 
-</div>
+- Rust workspace with formatting, Clippy, unit, integration, and doc-test gates
+- Typed and replayable trust boundaries rather than implicit agent authority
+- Repository-native contracts for long-running, agent-assisted development
 
-<br/>
+### [flab](https://github.com/eunhhu/flab)
 
-<!-- 💻 live terminal (animated SVG, no JS needed) -->
-<div align="center">
-  <img src="assets/terminal.svg" width="880" alt="terminal session" />
-</div>
+An authorized Frida instrumentation workbench for reproducible mobile and game
+security research. A shared TypeScript core powers its TUI, CLI, MCP/ACP, and
+structured agent interfaces.
 
-<br/>
+- Device-safe process discovery, attach/spawn, tracing, and cleanup lifecycle
+- Descriptor-driven instruments with bounded inputs and explicit side effects
+- Unit, protocol, TUI, packaging, and native-runtime verification surfaces
 
-## 🐍 Contribution graph, but it's alive
+### [RexPlayer](https://github.com/eunhhu/RexPlayer)
 
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/eunhhu/eunhhu/output/github-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/eunhhu/eunhhu/output/github-snake.svg" />
-    <img src="https://raw.githubusercontent.com/eunhhu/eunhhu/output/github-snake-dark.svg" alt="contribution snake" width="100%" />
-  </picture>
-</div>
+A container-native Android runtime and defensive security research project for
+Windows/WSL2 and Linux. The public repository is intentionally evidence-led and
+marks unimplemented product goals separately from reproduced runtime results.
 
-## 🏙️ Contribution graph, but it's a city
+- Reproduced Android 14 boot and ADB on Linux and Windows/WSL2 substrates
+- Verified `/dev/uinput` to Android InputReader touchscreen path
+- Defensive exposure matrix, integrity-checked evidence, and CI verification
 
-<div align="center">
-  <img src="profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3d contribution graph" />
-</div>
+## External validation
 
-## 📊 Numbers
+- [DreamHack profile](https://dreamhack.io/users/97873): **16,550 points, rank #28,
+  76 challenges**, with a focus on reversing and systems security
+- Frida Luma contributions merged upstream:
+  [PR #3](https://github.com/frida/luma/pull/3) and
+  [PR #4](https://github.com/frida/luma/pull/4)
+- Paid client delivery across web, automation, and systems projects; detailed
+  scope and redacted evidence are available in a role-specific résumé
 
-<div align="center">
-  <img height="170" src="https://github-readme-stats-sigma-five.vercel.app/api?username=eunhhu&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&bg_color=16161e" alt="stats" />
-  <img height="170" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=eunhhu&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&bg_color=16161e" alt="top langs" />
-  <br/>
-  <img src="https://streak-stats.demolab.com?user=eunhhu&theme=tokyonight&hide_border=true&background=16161E" alt="streak" />
-  <br/><br/>
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=eunhhu&theme=tokyo-night&hide_border=true&area=true&bg_color=16161e&custom_title=52%20weeks%20of%20shipping" width="100%" alt="activity graph" />
-  <br/>
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=eunhhu&theme=tokyonight" width="100%" alt="profile summary" />
-  <br/>
-  <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=eunhhu&theme=tokyonight" alt="repos per language" />
-  <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=eunhhu&theme=tokyonight" alt="commit language" />
-  <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=eunhhu&theme=tokyonight&utcOffset=9" alt="productive time" />
-</div>
+## Engineering approach
 
-## 🚀 Featured
+- **Languages:** Rust, TypeScript/JavaScript, Python, C, Shell
+- **Platforms:** Linux, Android, Windows/WSL2, containers, GitHub Actions
+- **Focus:** platform engineering, developer experience, runtime security,
+  reverse engineering, automation, and reliable operations
+- **Workflow:** agent-assisted where useful, with human-owned architecture,
+  explicit attribution, executable checks, and reproducible evidence
 
-<div align="center">
-  <a href="https://github.com/eunhhu/ardex">
-    <img src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=eunhhu&repo=ardex&theme=tokyonight&hide_border=true&bg_color=16161e" alt="ardex" />
-  </a>
-  <a href="https://github.com/eunhhu/orv">
-    <img src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=eunhhu&repo=orv&theme=tokyonight&hide_border=true&bg_color=16161e" alt="orv" />
-  </a>
-  <br/>
-  <a href="https://github.com/eunhhu/charm">
-    <img src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=eunhhu&repo=charm&theme=tokyonight&hide_border=true&bg_color=16161e" alt="charm" />
-  </a>
-  <a href="https://github.com/eunhhu/WHAT.md">
-    <img src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=eunhhu&repo=WHAT.md&theme=tokyonight&hide_border=true&bg_color=16161e" alt="WHAT.md" />
-  </a>
-</div>
+## Security boundary
 
-| Project | What it is |
-|---|---|
-| [`ardex`](https://github.com/eunhhu/ardex) | Local autonomy control plane for Codex-based coding workflows |
-| [`orv`](https://github.com/eunhhu/orv) | Rust DSL/runtime experiment for agent-oriented automation |
-| [`charm`](https://github.com/eunhhu/charm) | Harness agent inspired by Cascade-style coding workflows |
-| [`WHAT.md`](https://github.com/eunhhu/WHAT.md) | WHAT-WHY-HOW-WHO spec standard for syncing human/AI context |
-
-## 🧠 Principles
-
-> - **Local-first** when possible, cloud when it earns its keep
-> - Automation should **reduce surface area**, not create busywork
-> - Security research belongs in **authorized, reproducible, useful tooling**
-> - Good tools feel **obvious** after you use them once
-
-<div align="center">
-
-<!-- 🌊 custom animated footer -->
-<img src="assets/footer.svg" width="100%" alt="footer" />
-
-</div>
+Security work shown here is limited to systems I own or am authorized to test,
+offline targets, and isolated research environments. The goal is defensive,
+reproducible engineering—not unauthorized access or interference with other
+users, services, or economies.
