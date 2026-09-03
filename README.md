@@ -47,7 +47,7 @@ marks unimplemented product goals separately from reproduced runtime results.
   [PR #3](https://github.com/frida/luma/pull/3) and
   [PR #4](https://github.com/frida/luma/pull/4)
 - Paid client delivery across web, automation, and systems projects; detailed
-  scope and redacted evidence are available in a role-specific résumé
+  scope and redacted evidence are available in a role-specific resume
 
 ## Engineering approach
 
