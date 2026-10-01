@@ -2,50 +2,73 @@
 
 **Systems · Security · Developer Tooling**
 
-I build local-first developer infrastructure, reproducible security tooling, and
-low-level runtime experiments. My work focuses on explicit trust boundaries,
-testable contracts, and evidence that distinguishes a working implementation
-from an architectural claim.
+I build local-first AI infrastructure, instrumentation tools, and Android runtime
+experiments. I focus on explicit trust boundaries, testable contracts, and
+reproducible evidence.
+
+## Merged upstream: Frida Luma
+
+- [**#3 · Harden Luma bug paths**](https://github.com/frida/luma/pull/3):
+  improved build reliability, instrument-path validation, error reporting, and
+  handling of malformed input or unavailable runtime resources.
+- [**#4 · Fix mission session providers**](https://github.com/frida/luma/pull/4):
+  fixed live assistant-text continuity and added an OpenAI-compatible mission
+  provider with optional API keys and corrected URL handling.
+
+Both contributions were merged into [frida/luma](https://github.com/frida/luma).
 
 ## Selected work
 
-### [Ditto](https://github.com/eunhhu/ditto)
+### [Ditto](https://github.com/eunhhu/ditto) · Local-first personal AI
 
-A local-first semantic microkernel for AI agents, written in Rust. It provides a
-durable event spine, bounded context and capability retrieval, content-addressed
-artifacts, provider-neutral model contracts, and fail-closed effect leases.
+- **Problem:** Keep long-running personal AI work manageable as memory,
+  capabilities, and scheduled tasks grow.
+- **Core:** A Rust runtime with an append-only event spine, scoped memory,
+  bounded context retrieval, content-addressed artifacts, and explicit effect
+  permissions.
+- **Evidence & stage:** An executable foundation with
+  [offline memory-correction and restart evidence](https://github.com/eunhhu/ditto/blob/main/docs/agent/tasks/015-evidence.md).
+  The synthetic checks cover corrected-memory inclusion and irrelevant or
+  cross-session memory exclusion; they do not establish general live-agent
+  quality. Broader tool execution and efficiency goals remain in development.
 
-- Rust workspace with formatting, Clippy, unit, integration, and doc-test gates
-- Typed and replayable trust boundaries rather than implicit agent authority
-- Repository-native contracts for long-running, agent-assisted development
+### [flab](https://github.com/eunhhu/flab) · Reproducible instrumentation
 
-### [flab](https://github.com/eunhhu/flab)
+- **Problem:** Keep authorized runtime research repeatable across manual and
+  automated interfaces, with explicit session ownership and cleanup.
+- **Core:** A shared TypeScript engine behind a guided TUI, CLI, and MCP/ACP
+  interfaces, with bounded recording and descriptor-driven instruments.
+- **Evidence & stage:** The
+  [Android live-verification report](https://github.com/eunhhu/flab/blob/main/docs/android-live-verification.md)
+  records device-specific results, restoration and cleanup, excluded targets,
+  and remaining blockers. Coverage is limited to the documented authorized
+  offline tests.
 
-An authorized Frida instrumentation workbench for reproducible mobile and game
-security research. A shared TypeScript core powers its TUI, CLI, MCP/ACP, and
-structured agent interfaces.
+### [RexPlayer](https://github.com/eunhhu/RexPlayer) · Android runtime research
 
-- Device-safe process discovery, attach/spawn, tracing, and cleanup lifecycle
-- Descriptor-driven instruments with bounded inputs and explicit side effects
-- Unit, protocol, TUI, packaging, and native-runtime verification surfaces
+- **Problem:** Explore a small native host for container-based Android on
+  Windows/WSL2 and Linux.
+- **Core:** Android substrate experiments, a native input path, host capability
+  inspection, and an early Rust host UI.
+- **Evidence & stage:** The
+  [runtime verification report](https://github.com/eunhhu/RexPlayer/blob/main/docs/VERIFICATION_2026-08-20.md)
+  documents Android 14 boot, ADB, and raw touchscreen-input delivery on two lab
+  substrates. This is a pre-alpha research project; integrated rendering,
+  audio, production packaging, and performance remain unverified.
 
-### [RexPlayer](https://github.com/eunhhu/RexPlayer)
+## More tooling
 
-A container-native Android runtime and defensive security research project for
-Windows/WSL2 and Linux. The public repository is intentionally evidence-led and
-marks unimplemented product goals separately from reproduced runtime results.
-
-- Reproduced Android 14 boot and ADB on Linux and Windows/WSL2 substrates
-- Verified `/dev/uinput` to Android InputReader touchscreen path
-- Defensive exposure matrix, integrity-checked evidence, and CI verification
+- [remotepad](https://github.com/eunhhu/remotepad): Rust remote-input server,
+  binary UDP protocol, and web layout editor.
+- [Spellwire](https://github.com/eunhhu/spellwire): TypeScript-to-native input
+  automation with a Rust runtime, stateful hotkeys, and overlays.
+- [Vlitz](https://github.com/eunhhu/vlitz): Frida-based dynamic debugging and
+  process-analysis CLI in Rust.
 
 ## External validation
 
 - [DreamHack profile](https://dreamhack.io/users/97873): **16,550 points, rank #28,
   76 challenges**, with a focus on reversing and systems security
-- Frida Luma contributions merged upstream:
-  [PR #3](https://github.com/frida/luma/pull/3) and
-  [PR #4](https://github.com/frida/luma/pull/4)
 - Paid client delivery across web, automation, and systems projects; detailed
   scope and redacted evidence are available in a role-specific resume
 
